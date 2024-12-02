@@ -1,0 +1,33 @@
+header {
+    background-color: rgb(43, 39, 39); /* Set the background color */
+    color: white; /* White text color */
+    text-align: center;
+    padding: 10px 15px; /* Smaller padding for mobile */
+    height: 20%;
+  }
+  
+  header h1 {
+    font-size: 2.5rem; /* Reduce font size on smaller screens */
+    margin: 0;
+  }
+  
+  header p {
+    font-size: 1.2rem;
+    font-style: italic;
+    margin-top: 10px;
+  }
+  
+  /* Media Query for Mobile and Tablet */
+  @media (max-width: 768px) {
+    header {
+      padding: 20px 10px;
+    }
+  
+    header h1 {
+      font-size: 2rem; /* Smaller title for mobile */
+    }
+  
+    header p {
+      font-size: 1rem;
+    }
+  }

@@ -1,0 +1,107 @@
+/* Ensure the body and html elements fill the entire viewport */
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden; /* Prevent scrolling */
+  }
+  
+  /* Main content should take the remaining space */
+  .main-content {
+    flex-grow: 1; /* Take up remaining space, forcing footer to be at the bottom */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Align content at the top */
+  }
+  
+  /* Global Footer Styling */
+  .footer {
+    position: absolute;
+    bottom: 0; /* Position footer at the bottom */
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 0px 20px 20px 20px;
+    background-color: #1e1e1e; /* Footer background color */
+    box-sizing: border-box;
+    z-index: 10;
+    margin-top: 0;
+  }
+  
+  /* Footer box */
+  .footer-box {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(42, 42, 42, 0.8); /* Semi-transparent box */
+    border-radius: 10px; /* Rounded corners */
+    padding: 11px;
+    width: 90%; /* Occupy most of the width */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Optional shadow for depth */
+    position: relative;
+    backdrop-filter: blur(5px); /* Optional: Add blur effect */
+    margin-top: -30px;
+  }
+  
+  /* Footer item styling */
+  .footer-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: white;
+    flex: 1; /* Equal space for each item */
+    padding: 10px;
+  }
+  
+  .footer-item i {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #f39c12; /* Icon color */
+  }
+  
+  .footer-item h4 {
+    margin: 0;
+    font-size: 1.1rem;
+  }
+  
+  .footer-item p {
+    margin: 5px 0 0;
+    font-size: 0.9rem;
+    color: #bbb;
+  }
+  
+  /* Responsive design for mobile */
+  @media screen and (max-width: 768px) {
+    .footer-box {
+      flex-direction: column; /* Stack items in a column */
+      padding: 10px;
+    }
+  
+    .footer-item {
+      flex: unset; /* Remove equal spacing */
+      width: 100%; /* Ensure items take up full width */
+      padding: 10px 0;
+    }
+  
+    .footer-item i {
+      font-size: 1.5rem; /* Adjust icon size for smaller screens */
+    }
+  
+    .footer-item h4 {
+      font-size: 1rem; /* Adjust heading size */
+    }
+  
+    .footer-item p {
+      font-size: 0.85rem; /* Adjust paragraph size */
+    }
+  
+    /* Ensure footer on mobile stays at the bottom */
+    .footer {
+      padding-bottom: 20px; /* Ensure spacing at the bottom */
+      margin-top: 0; /* Remove any negative margin */
+    }
+  }
+  

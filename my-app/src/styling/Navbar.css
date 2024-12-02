@@ -1,10 +1,9 @@
 /* Navbar styles */
 .navbar {
-  background-color: #333; /* Dark background for the navbar */
+  background-color: #333; /* Dark background */
   padding: 10px;
-  margin-top: -1px;  /* Make sure it joins with the header */
-  border-top: none;
-  border-bottom: 3px solid orange; /* Orange separator line at the bottom of the navbar */
+  border-bottom: 3px solid orange;
+  position: relative; /* Ensure proper positioning for child elements */
 }
 
 .menu-toggle {
@@ -16,12 +15,14 @@
   cursor: pointer;
 }
 
+
 .navbar-list {
-  display: flex;
-  list-style-type: none;
+  display: flex; /* Default for desktop */
+  list-style: none;
   margin: 0;
   padding: 0;
-  justify-content: center; /* Center the navbar items horizontally */
+  justify-content: center;
+  font-size: 22px;
 }
 
 .navbar-item {
@@ -29,11 +30,9 @@
 }
 
 .navbar-link {
-  color: rgb(145, 141, 141); /* White color for the links */
-  text-decoration: none; /* Remove underline */
-  font-size: 24px;
+  color: rgb(145, 139, 139);
+  text-decoration: none;
   padding: 10px 20px;
-  display: inline-block; /* Make sure the links act as buttons */
 }
 
 /* Apply the orange color only to the text when hovered */
@@ -47,29 +46,40 @@ header {
   border-bottom: 2px solid #ccc; /* Grey line separating header and navbar */
 }
 
-/* Responsive Navbar for Mobile */
+/* Responsive Reset for Mobile */
 @media (max-width: 768px) {
   .menu-toggle {
-    display: block; /* Show hamburger menu */
+    display: block; /* Show the toggle button */
   }
 
   .navbar-list {
-    display: none; /* Hide links by default */
-    flex-direction: column;
-    position: absolute;
-    top: 100%;
+    display: none; /* Hide menu by default */
+    flex-direction: column; /* Stack items vertically */
+    position: absolute; /* Isolate menu */
+    top: 100%; /* Place below navbar */
     left: 0;
-    width: 100%;
+    width: 100%; /* Full width */
     background-color: #333;
-    text-align: center;
     z-index: 10;
+    margin: 0; /* Reset margins */
+    padding: 0; /* Reset padding */
   }
 
   .navbar-list.open {
-    display: flex; /* Show links when open */
+    display: flex; /* Show menu when open */
+  }
+
+  .navbar-item {
+    margin: 0; /* Reset margins */
+    border-bottom: 1px solid #444; /* Separator between items */
+  }
+
+  .navbar-item:last-child {
+    border-bottom: none; /* Remove border from last item */
   }
 
   .navbar-link {
-    padding: 15px 20px;
+    padding: 15px; /* Add padding for vertical items */
+    text-align: center; /* Center text */
   }
 }

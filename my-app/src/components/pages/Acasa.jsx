@@ -1,4 +1,5 @@
 import Navbar from '../complex/Navbar';
+import Footer from '../complex/Footer';
 import '../../styling/Navbar.css';
 import '../../styling/Acasa.css';
 import React, { useState, useEffect } from 'react';
@@ -51,8 +52,7 @@ const Acasa = () => {
     </div>
   ))}
 </Slider>
-  
-    
+<Footer />
       </div>
     );
   };
