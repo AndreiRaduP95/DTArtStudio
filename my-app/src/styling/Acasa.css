@@ -1,0 +1,146 @@
+header {
+  background-color: rgb(43, 39, 39); /* Set the background color */
+  color: white; /* White text color */
+  text-align: center;
+  padding: 30px 15px; /* Smaller padding for mobile */
+}
+
+header h1 {
+  font-size: 2.5rem; /* Reduce font size on smaller screens */
+  margin: 0;
+}
+
+header p {
+  font-size: 1.2rem;
+  font-style: italic;
+  margin-top: 10px;
+}
+
+/* Media Query for Mobile and Tablet */
+@media (max-width: 768px) {
+  header {
+    padding: 20px 10px;
+  }
+
+  header h1 {
+    font-size: 2rem; /* Smaller title for mobile */
+  }
+
+  header p {
+    font-size: 1rem;
+  }
+}
+  
+  /* Carousel container */
+  .small-carousel {
+    margin: 0 auto;
+    position: relative;
+    width: 90%;
+    max-height: 600px;
+    overflow: hidden;
+  }
+  
+  .carousel-item {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+  
+  .carousel-image {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+  }
+  
+  .carousel-info {
+    position: absolute;
+    top: 70%; /* Slightly above */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+    padding: 20px 40px;
+    border-radius: 10px;
+    max-width: 80%;
+  }
+  
+  .carousel-info h3 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+  
+  .carousel-info p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  .carousel-info .btn {
+    background-color: #ff8c00;
+    border: none;
+    color: white;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  .carousel-info .btn:hover {
+    background-color: #e67600;
+  }
+  
+  /* Responsive Carousel for Mobile */
+  @media (max-width: 768px) {
+    .carousel-image {
+      height: 400px; /* Reduce height for mobile */
+    }
+  
+    .carousel-info h3 {
+      font-size: 1.8rem; /* Smaller heading */
+    }
+  
+    .carousel-info p {
+      font-size: 1rem;
+    }
+  
+    .carousel-info .btn {
+      font-size: 0.9rem;
+      padding: 8px 16px;
+    }
+  }
+  /* Arrows - Rectangular Design */
+.slick-prev, .slick-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #ff8c00; /* Orange background */
+  color: white; /* White arrow color */
+  border: none;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  cursor: pointer;
+  z-index: 10;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 5px; /* Remove rounding by setting a small value or 0 */
+}
+
+.slick-prev {
+  left: 15px; /* Adjust positioning as needed */
+}
+
+.slick-next {
+  right: 15px; /* Adjust positioning as needed */
+}
+
+/* Add hover effect for better interaction */
+.slick-prev:hover, .slick-next:hover {
+  background-color: #e67600; /* Slightly darker orange */
+  color: white;
+}
