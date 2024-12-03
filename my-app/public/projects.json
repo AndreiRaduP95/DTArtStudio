@@ -3,31 +3,31 @@
     {
       "id": 1,
       "title": "Modern Office Building",
-      "picture": "/assets/office.jpg",
+      "picture": "/assets/pictures/office.jpg",
       "description": "A sleek and modern office building with a minimalist design, featuring large glass windows and sustainable building materials."
     },
     {
       "id": 2,
       "title": "Urban Park",
-      "picture": "/assets/park.jpg",
+      "picture": "/assets/pictures/park.jpg",
       "description": "An innovative urban park featuring green spaces, walking paths, and water features designed for relaxation and recreation in the city."
     },
     {
       "id": 3,
       "title": "Luxury Residential Complex",
-      "picture": "/assets/stadium.jpg",
+      "picture": "/assets/pictures/stadium.jpg",
       "description": "A high-end residential complex with panoramic views, spacious apartments, and modern amenities for luxury living."
     },
     {
       "id": 4,
       "title": "Museum of Contemporary Art",
-      "picture": "/assets/museum.jpg",
+      "picture": "/assets/pictures/museum.jpg",
       "description": "A contemporary museum with dynamic architectural features, housing collections of modern art and offering spaces for exhibitions and events."
     },
     {
       "id": 4,
       "title": "Public Library",
-      "picture": "/assets/library.jpg",
+      "picture": "/assets/pictures/library.jpg",
       "description": "A community-focused library with state-of-the-art facilities, quiet reading areas, and interactive learning spaces."
     }
   ]

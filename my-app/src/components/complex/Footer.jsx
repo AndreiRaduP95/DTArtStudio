@@ -12,21 +12,21 @@ const Footer = () => {
           <div className="footer-item">
             <i className="footer-icon user-icon"></i>
             <div>
-              <h4>TRUSTED SERVICES</h4>
+              <h4>SERVICII DE INCREDERE</h4>
               <p>We have trusted customers</p>
             </div>
           </div>
           <div className="footer-item">
             <i className="footer-icon support-icon"></i>
             <div>
-              <h4>24/7 SUPPORT</h4>
-              <p>014 1547 925 - 123 4567 890</p>
+              <h4>SUPORT</h4>
+              <p>+40754123456</p>
             </div>
           </div>
           <div className="footer-item">
             <i className="footer-icon experience-icon"></i>
             <div>
-              <h4>WELL EXPERIENCED</h4>
+              <h4>EXPERIENTA</h4>
               <p>15 years of experience</p>
             </div>
           </div>
