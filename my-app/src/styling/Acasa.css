@@ -163,3 +163,9 @@ header p {
     display: none;
   }
 }
+
+@media (max-width: 768px) {
+  header {
+    display: none; /* Completely hide the header on mobile */
+  }
+}
