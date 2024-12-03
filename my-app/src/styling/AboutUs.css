@@ -17,17 +17,3 @@ header {
     margin-top: 10px;
   }
   
-  /* Media Query for Mobile and Tablet */
-  @media (max-width: 768px) {
-    header {
-      padding: 20px 10px;
-    }
-  
-    header h1 {
-      font-size: 2rem; /* Smaller title for mobile */
-    }
-  
-    header p {
-      font-size: 1rem;
-    }
-  }
