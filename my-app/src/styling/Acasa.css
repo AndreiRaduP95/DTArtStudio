@@ -157,3 +157,9 @@ header p {
   background-color: #e67600; /* Slightly darker orange */
   color: white;
 }
+
+@media (max-width: 375px) and (max-height: 667px){
+  .header{
+    display: none;
+  }
+}
