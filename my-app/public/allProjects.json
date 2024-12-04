@@ -1,84 +1,84 @@
 {
-    "allPprojects": [
+    "allProjects": [
       {
-        "id": 1,
+        "id": 6,
         "title": "Casa 1",
-        "picture": ["/assets/Casa1/1.jpg"],
+        "picture": ["/assets/Casa1/1.jpg","/assets/Casa1/2.jpg","/assets/Casa1/3.jpg"],
         "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
       },
       {
-        "id": 2,
+        "id": 7,
         "title": "Urban Park",
         "picture": "/assets/pictures/park.jpg",
         "description": "An innovative urban park featuring green spaces, walking paths, and water features designed for relaxation and recreation in the city."
       },
       {
-        "id": 3,
+        "id": 8,
         "title": "Luxury Residential Complex",
         "picture": "/assets/pictures/stadium.jpg",
         "description": "A high-end residential complex with panoramic views, spacious apartments, and modern amenities for luxury living."
       },
       {
-        "id": 4,
+        "id": 9,
         "title": "Museum of Contemporary Art",
         "picture": "/assets/pictures/museum.jpg",
         "description": "A contemporary museum with dynamic architectural features, housing collections of modern art and offering spaces for exhibitions and events."
       },
       {
-        "id": 4,
+        "id": 10,
         "title": "Public Library",
         "picture": "/assets/pictures/library.jpg",
         "description": "A community-focused library with state-of-the-art facilities, quiet reading areas, and interactive learning spaces."
       },
       {
-        "id": 5,
+        "id": 11,
         "title": "Casa 1",
         "picture": "/assets/pictures/office.jpg",
         "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
       },
       {
-        "id": 6,
+        "id": 12,
         "title": "Urban Park",
         "picture": "/assets/pictures/park.jpg",
         "description": "An innovative urban park featuring green spaces, walking paths, and water features designed for relaxation and recreation in the city."
       },
       {
-        "id": 7,
+        "id": 13,
         "title": "Luxury Residential Complex",
         "picture": "/assets/pictures/stadium.jpg",
         "description": "A high-end residential complex with panoramic views, spacious apartments, and modern amenities for luxury living."
       },
       {
-        "id": 8,
+        "id": 14,
         "title": "Museum of Contemporary Art",
         "picture": "/assets/pictures/museum.jpg",
         "description": "A contemporary museum with dynamic architectural features, housing collections of modern art and offering spaces for exhibitions and events."
       },
       {
-        "id": 9,
+        "id": 15,
         "title": "Public Library",
         "picture": "/assets/pictures/library.jpg",
         "description": "A community-focused library with state-of-the-art facilities, quiet reading areas, and interactive learning spaces."
       },
       {
-        "id": 10,
+        "id": 16,
         "title": "Museum of Contemporary Art",
         "picture": "/assets/pictures/museum.jpg",
         "description": "A contemporary museum with dynamic architectural features, housing collections of modern art and offering spaces for exhibitions and events."
       },
       {
-        "id": 11,
+        "id": 17,
         "title": "Public Library",
         "picture": "/assets/pictures/library.jpg",
         "description": "A community-focused library with state-of-the-art facilities, quiet reading areas, and interactive learning spaces."
       },{
-        "id": 12,
+        "id": 18,
         "title": "Museum of Contemporary Art",
         "picture": "/assets/pictures/museum.jpg",
         "description": "A contemporary museum with dynamic architectural features, housing collections of modern art and offering spaces for exhibitions and events."
       },
       {
-        "id": 13,
+        "id": 19,
         "title": "Public Library",
         "picture": "/assets/pictures/library.jpg",
         "description": "A community-focused library with state-of-the-art facilities, quiet reading areas, and interactive learning spaces."
