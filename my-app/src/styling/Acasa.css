@@ -26,13 +26,6 @@ header p {
   margin-top: 10px;
 }
 
-/* Make the content section flexible */
-.contact > p {
-  margin: 20px 0;
-  font-size: 1.1rem;
-  line-height: 1.6;
-  color: #333;
-}
 
 /* Carousel styles (adjust to container's size and mobile responsiveness) */
 .small-carousel {
