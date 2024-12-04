@@ -1,19 +1,24 @@
-header {
-    background-color: rgb(43, 39, 39); /* Set the background color */
-    color: white; /* White text color */
-    text-align: center;
-    padding: 10px 15px; /* Smaller padding for mobile */
-    height: 20%;
-  }
-  
-  header h1 {
-    font-size: 2.5rem; /* Reduce font size on smaller screens */
-    margin: 0;
-  }
-  
-  header p {
-    font-size: 1.2rem;
-    font-style: italic;
-    margin-top: 10px;
-  }
-  
+/* Ensure the body and html elements fill the entire viewport */
+html, body {
+  height: 100%; /* Full height for body */
+  margin: 0;
+  display: flex;
+  flex-direction: column; /* Stack content vertically */
+}
+
+/* Ensure the .about-us container takes the full height of the screen */
+.about-us {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1; /* This ensures it grows to fill the space */
+  min-height: 100vh;
+}
+
+/* Main section should take up the remaining space */
+section {
+  padding: 20px;
+  flex-grow: 1; /* This makes the section grow and take up the available space */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Align content to the top */
+}
