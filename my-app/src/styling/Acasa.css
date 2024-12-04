@@ -1,13 +1,22 @@
+/* Ensure html and body take the full height of the viewport */
+html, body {
+  height: 100%;  /* Full height for the entire page */
+  margin: 0;
+  display: flex;
+  flex-direction: column; /* Stack content vertically */
+}
+
+/* Header Styles */
 header {
   background-color: rgb(43, 39, 39); /* Set the background color */
   color: white; /* White text color */
   text-align: center;
-  padding: 10px 15px; /* Smaller padding for mobile */
+  padding: 10px 15px; /* Padding for header */
   height: 90px;
 }
 
 header h1 {
-  font-size: 2.5rem; /* Reduce font size on smaller screens */
+  font-size: 2.5rem; /* Font size for header */
   margin: 0;
 }
 
@@ -17,114 +26,111 @@ header p {
   margin-top: 10px;
 }
 
-/* Media Query for Mobile and Tablet */
+/* Make the content section flexible */
+.contact > p {
+  margin: 20px 0;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Carousel styles (adjust to container's size and mobile responsiveness) */
+.small-carousel {
+  margin: 0 auto;
+  position: relative;
+  width: 90%;
+  max-height: 600px;
+  overflow: hidden;
+}
+
+.carousel-item {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.carousel-image {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+}
+
+.carousel-info {
+  position: absolute;
+  top: 60%; /* Slightly above */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+  padding: 20px 40px;
+  border-radius: 10px;
+  max-width: 80%;
+}
+
+.carousel-info h3 {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.carousel-info p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.carousel-info .btn {
+  background-color: #696662;
+  border: none;
+  color: white;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.carousel-info .btn:hover {
+  background-color: #e67600;
+}
+
+/* Responsive Carousel for Mobile */
 @media (max-width: 768px) {
-  header {
-    padding: 20px 10px;
+  .slick-prev, .slick-next {
+    display: none !important; /* Hide arrows on mobile */
   }
 
-  header h1 {
-    font-size: 2rem; /* Smaller title for mobile */
+  .carousel-info {
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Center the element */
+    width: 90%; /* Slightly wider for mobile */
+    padding: 15px 20px; /* Adjust padding for mobile */
+    border-radius: 10px; /* Keep a slight rounding */
+    text-align: center; /* Center the text */
+    background-color: rgba(0, 0, 0, 0.8); /* Slightly darker background for better readability */
   }
 
-  header p {
+  .carousel-image {
+    height: 600px; /* Reduce height for mobile */
+  }
+
+  .carousel-info h3 {
+    font-size: 1.8rem; /* Smaller heading */
+  }
+
+  .carousel-info p {
     font-size: 1rem;
+  }
+
+  .carousel-info .btn {
+    font-size: 0.9rem;
+    padding: 8px 16px;
   }
 }
-  /* Carousel container */
-  .small-carousel {
-    margin: 0 auto;
-    position: relative;
-    width: 90%;
-    max-height: 600px;
-    overflow: hidden;
-  }
-  
-  .carousel-item {
-    position: relative;
-    text-align: center;
-    color: white;
-  }
-  
-  .carousel-image {
-    width: 100%;
-    height: 600px;
-    object-fit: cover;
-  }
-  
-  .carousel-info {
-    position: absolute;
-    top: 60%; /* Slightly above */
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    text-align: center;
-    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
-    padding: 20px 40px;
-    border-radius: 10px;
-    max-width: 80%;
-  }
-  
-  .carousel-info h3 {
-    font-size: 2.5rem;
-    text-transform: uppercase;
-    margin-bottom: 10px;
-  }
-  
-  .carousel-info p {
-    font-size: 1.2rem;
-    margin-bottom: 20px;
-  }
-  
-  .carousel-info .btn {
-    background-color: #696662;
-    border: none;
-    color: white;
-    text-transform: uppercase;
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-size: 1rem;
-    cursor: pointer;
-    text-decoration: none;
-  }
-  
-  .carousel-info .btn:hover {
-    background-color: #e67600;
-  }
-  
-  /* Responsive Carousel for Mobile */
-  @media (max-width: 768px) {
-    .slick-prev, .slick-next {
-      display: none !important; /* Hide arrows on mobile */
-    }
-    .carousel-info {
-      top: 50%; /* Center vertically */
-      left: 50%; /* Center horizontally */
-      transform: translate(-50%, -50%); /* Center the element */
-      width: 90%; /* Slightly wider for mobile */
-      padding: 15px 20px; /* Adjust padding for mobile */
-      border-radius: 10px; /* Keep a slight rounding */
-      text-align: center; /* Center the text */
-      background-color: rgba(0, 0, 0, 0.8); /* Slightly darker background for better readability */
-    }
-    .carousel-image {
-      height: 600px; /* Reduce height for mobile */
-    }
-  
-    .carousel-info h3 {
-      font-size: 1.8rem; /* Smaller heading */
-    }
-  
-    .carousel-info p {
-      font-size: 1rem;
-    }
-  
-    .carousel-info .btn {
-      font-size: 0.9rem;
-      padding: 8px 16px;
-    }
-  }
-  /* Arrows - Rectangular Design */
+
+/* Arrows - Rectangular Design */
 .slick-prev, .slick-next {
   position: absolute;
   top: 50%;
@@ -158,8 +164,9 @@ header p {
   color: white;
 }
 
-@media (max-width: 375px) and (max-height: 667px){
-  header{
+/* Header and footer hiding on mobile */
+@media (max-width: 375px) and (max-height: 667px) {
+  header {
     display: none;
   }
 }
@@ -168,4 +175,8 @@ header p {
   header {
     display: none; /* Completely hide the header on mobile */
   }
+}
+
+footer {
+  margin-top: auto;  /* Push footer to the bottom of the page */
 }
